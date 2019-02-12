@@ -4,16 +4,17 @@
 
 > 링크 다운로드
 >
+> 한글 번역 본
+>
+>[64 Bit](https://github.com/kairos0/GUI-for-GoodbyeDPI/releases/download/v1.0.2k/GoodByeDPI_GUI_64Bit.zip)
+>
 > 원 저자 (터키어)
 >
 >[32 Bit](https://github.com/hex4d0r/GUI-for-GoodbyeDPI/releases/download/v1.0/GoodByeDPI_GUI_32Bit.zip)
 >
 >[64 Bit](https://github.com/hex4d0r/GUI-for-GoodbyeDPI/releases/download/v1.0/GoodByeDPI_GUI_64Bit.zip)
 >
-> 한글 번역 본
->
->[64 Bit](https://github.com/kairos0/GUI-for-GoodbyeDPI/releases/download/v1.0.2k/GoodByeDPI_GUI_64Bit.zip)
->
+
 
 # 간단 요약
 >
