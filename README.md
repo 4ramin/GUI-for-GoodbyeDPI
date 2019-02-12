@@ -23,7 +23,7 @@
 
 # 환경 세팅
 >
->(Link) Visual Studio 2017 : (ttps://support.microsoft.com/tr-tr/help/2977003/the-latest-supported-visual-c-downloads)
+>(Link) Visual Studio 2017 : (https://support.microsoft.com/tr-tr/help/2977003/the-latest-supported-visual-c-downloads)
 >
 >(Link) Qt : (https://www.qt.io/download)
 
