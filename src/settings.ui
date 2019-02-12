@@ -45,13 +45,13 @@
      </property>
      <widget class="QWidget" name="paramTab">
       <attribute name="title">
-       <string>Parametre Ayarları</string>
+       <string>Parameter 설정</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_5">
        <item row="0" column="0">
         <widget class="QCheckBox" name="checkDefaultParam">
          <property name="text">
-          <string>Hazır Parametre Kullan</string>
+          <string>기본 옵션값 사용</string>
          </property>
          <property name="checked">
           <bool>true</bool>
@@ -61,7 +61,7 @@
        <item row="1" column="0">
         <widget class="QCheckBox" name="checkCustomParam">
          <property name="text">
-          <string>Özel Parametre Kullan</string>
+          <string>커스텀 옵션 값 사용</string>
          </property>
         </widget>
        </item>
@@ -83,14 +83,14 @@
              <enum>QTabWidget::Rounded</enum>
             </property>
             <property name="currentIndex">
-             <number>0</number>
+             <number>2</number>
             </property>
             <property name="elideMode">
              <enum>Qt::ElideRight</enum>
             </property>
             <widget class="QWidget" name="param1">
              <attribute name="title">
-              <string>Parametre 1</string>
+              <string>Parameter 1</string>
              </attribute>
              <layout class="QVBoxLayout" name="verticalLayout">
               <item>
@@ -284,7 +284,7 @@
             </widget>
             <widget class="QWidget" name="param2">
              <attribute name="title">
-              <string>Parametre 2</string>
+              <string>Parameter 2</string>
              </attribute>
              <layout class="QGridLayout" name="gridLayout_8">
               <item row="0" column="0">
@@ -292,7 +292,7 @@
                 <item>
                  <widget class="QCheckBox" name="checkDnsAddr">
                   <property name="text">
-                   <string>[--dns-addr] redirect UDP DNS requests to the supplied IP address (experimental):</string>
+                   <string>[--dns-addr] 설정 된 IP 주소로 UDP DNS 요청을 리디렉션 합니다. (테스트 기능) :</string>
                   </property>
                  </widget>
                 </item>
@@ -303,6 +303,19 @@
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <spacer name="horizontalSpacer_6">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
                </layout>
               </item>
               <item row="1" column="0">
@@ -310,7 +323,7 @@
                 <item>
                  <widget class="QCheckBox" name="checkDnsPort">
                   <property name="text">
-                   <string>[--dns-port] redirect UDP DNS requests to the supplied port (53 by default)</string>
+                   <string>[--dns-port] UDP DNS 요청을 설정 된 포트로 리디렉션 합니다. (기본 값 : 53)</string>
                   </property>
                  </widget>
                 </item>
@@ -350,7 +363,7 @@
                 <item>
                  <widget class="QCheckBox" name="checkDnsv6Addr">
                   <property name="text">
-                   <string>[--dnsv6-addr] redirect UDPv6 DNS requests to the supplied IPv6 address (experimental):</string>
+                   <string>[--dnsv6-addr] UDPv6 DNS 요청을 설정 된 IPv6 주소로 리디렉션 합니다. (테스트 기능):</string>
                   </property>
                  </widget>
                 </item>
@@ -368,7 +381,7 @@
                 <item>
                  <widget class="QCheckBox" name="checkDnsv6Port">
                   <property name="text">
-                   <string>[--dnsv6-port] redirect UDPv6 DNS requests to the supplied port (53 by default)</string>
+                   <string>[--dnsv6-port] UDPv6 DNS 요청을 설정 된 포트로 리디렉션 합니다. (기본 값 : 53)</string>
                   </property>
                  </widget>
                 </item>
@@ -406,8 +419,7 @@
               <item row="4" column="0">
                <widget class="QCheckBox" name="checkBlacklist">
                 <property name="text">
-                 <string>[--blacklist] perform HTTP tricks only to host names and subdomains from
-                          supplied text file. This option can be supplied multiple times.</string>
+                 <string>[--blacklist] Blacklist 텍스트 파일에 작성되어 있는 호스트 이름과 하위 도메인에서 해당 기능을 수행 합니다. 이 옵션은 다중 설정 가능 합니다.</string>
                 </property>
                </widget>
               </item>
@@ -415,40 +427,40 @@
             </widget>
             <widget class="QWidget" name="quickSetting">
              <attribute name="title">
-              <string>Hizli Ayarlar</string>
+              <string>quickSetting</string>
              </attribute>
              <layout class="QGridLayout" name="gridLayout_6">
               <item row="1" column="0">
                <widget class="QGroupBox" name="groupQuickSettings">
                 <property name="title">
-                 <string>Hazir ayarlar</string>
+                 <string>준비 설정</string>
                 </property>
                 <layout class="QGridLayout" name="gridLayout_7">
                  <item row="0" column="0">
                   <widget class="QRadioButton" name="radioQuick1">
                    <property name="text">
-                    <string>[-1] -p -r -s -f 2 -k 2 -n -e 2 (most compatible mode, default)</string>
+                    <string>[-1] -p -r -s -f 2 -k 2 -n -e 2 (대부분의 호환 모드, 기본값)</string>
                    </property>
                   </widget>
                  </item>
                  <item row="2" column="0">
                   <widget class="QRadioButton" name="radioQuick3">
                    <property name="text">
-                    <string>[-3] -p -r -s -e 40 (better speed for HTTP and HTTPS)</string>
+                    <string>[-3] -p -r -s -e 40 (좀 더 빠른 HTTP and HTTPS 연결 속도)</string>
                    </property>
                   </widget>
                  </item>
                  <item row="1" column="0">
                   <widget class="QRadioButton" name="radioQuick2">
                    <property name="text">
-                    <string>[-2] -p -r -s -f 2 -k 2 -n -e 40 (better speed for HTTPS yet still compatible)</string>
+                    <string>[-2] -p -r -s -f 2 -k 2 -n -e 40 (HTTPS의 속도 상향)</string>
                    </property>
                   </widget>
                  </item>
                  <item row="3" column="0">
                   <widget class="QRadioButton" name="radioQuick4">
                    <property name="text">
-                    <string>[-4] -p -r -s (best speed)</string>
+                    <string>[-4] -p -r -s (가장 빠른 속도)</string>
                    </property>
                   </widget>
                  </item>
@@ -458,7 +470,7 @@
               <item row="0" column="0">
                <widget class="QCheckBox" name="checkQuickSettings">
                 <property name="text">
-                 <string>Hizli ayarlari aktif et</string>
+                 <string>속도 설정 활성화</string>
                 </property>
                </widget>
               </item>
@@ -473,30 +485,37 @@
      </widget>
      <widget class="QWidget" name="runTab">
       <attribute name="title">
-       <string>Çalışma Ayarları</string>
+       <string>작업 설정</string>
       </attribute>
       <layout class="QGridLayout" name="gridLayout_2">
-       <item row="2" column="0">
-        <widget class="QCheckBox" name="scheduleBox">
-         <property name="text">
-          <string>Çalışma Saatleri Ayarla (Sonraki guncellemede gelecek.)</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="0">
         <widget class="QCheckBox" name="trayBox">
          <property name="text">
-          <string>Sistem Tepsisine Küçült</string>
+          <string>시스템 트레이 최소화</string>
          </property>
          <property name="checked">
           <bool>true</bool>
          </property>
         </widget>
        </item>
+       <item row="2" column="0">
+        <widget class="QCheckBox" name="scheduleBox">
+         <property name="text">
+          <string>작업 시간 설정 (실행 시간 선택).</string>
+         </property>
+        </widget>
+       </item>
        <item row="1" column="0">
         <widget class="QCheckBox" name="startupBox">
          <property name="text">
-          <string>Başlangıçta Otomatik Çalıştır</string>
+          <string>부팅시 자동 실행</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QCheckBox" name="notificationBox">
+         <property name="text">
+          <string>알림 끄기</string>
          </property>
         </widget>
        </item>
@@ -506,13 +525,13 @@
           <bool>false</bool>
          </property>
          <property name="title">
-          <string>Çalışma Saatleri</string>
+          <string>실행 시간</string>
          </property>
          <widget class="QDateTimeEdit" name="startTime">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>90</y>
+            <x>20</x>
+            <y>50</y>
             <width>51</width>
             <height>22</height>
            </rect>
@@ -524,8 +543,8 @@
          <widget class="QDateTimeEdit" name="endTime">
           <property name="geometry">
            <rect>
-            <x>170</x>
-            <y>100</y>
+            <x>120</x>
+            <y>50</y>
             <width>51</width>
             <height>22</height>
            </rect>
@@ -540,13 +559,32 @@
            <enum>Qt::LocalTime</enum>
           </property>
          </widget>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QCheckBox" name="notificationBox">
-         <property name="text">
-          <string>Bildirimleri Kapat</string>
-         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>41</width>
+            <height>9</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>시작 시간</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>120</x>
+            <y>40</y>
+            <width>41</width>
+            <height>9</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>종료 시간</string>
+          </property>
+         </widget>
         </widget>
        </item>
       </layout>

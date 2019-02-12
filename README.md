@@ -1,13 +1,39 @@
 # GoodByeDPI GUI
 
-[GoodByeDPI](https://github.com/ValdikSS/GoodbyeDPI) isimli anti sansür uygulaması için kullanıcı arayüzü ile kolay kullanım sağlar.
+[GoodByeDPI](https://github.com/ValdikSS/GoodbyeDPI) 안티 검열을 위한 프로그램.
 
-> İndirme Bağlantıları
+> 링크 다운로드
+>
+> 원 저자 (터키어)
 >
 >[32 Bit](https://github.com/hex4d0r/GUI-for-GoodbyeDPI/releases/download/v1.0/GoodByeDPI_GUI_32Bit.zip)
 >
 >[64 Bit](https://github.com/hex4d0r/GUI-for-GoodbyeDPI/releases/download/v1.0/GoodByeDPI_GUI_64Bit.zip)
+>
+> 한글 번역 본
+>
+>[64 Bit](https://github.com/hex4d0r/GUI-for-GoodbyeDPI/releases/download/v1.0.2k/GoodByeDPI_GUI_64Bit.zip)
+>
 
+# 간단 요약
+>
+> 위 프로그램은 DNS(1.1.1.1)으로 변경하여 감지를 피하는 방식입니다.
+>
+> 빌드 및 소스코드 변경이 필요 할 경우 다음과 같은 환경 세팅이 필요합니다.
+
+# 환경 세팅
+>
+>(Link) Visual Studio 2017 : (ttps://support.microsoft.com/tr-tr/help/2977003/the-latest-supported-visual-c-downloads)
+>
+>(Link) Qt : (https://www.qt.io/download)
+
+# 빌드 환경
+>
+> OS : Windows
+> 컴파일러 : MSVC-2017(64Bit) / MinGW-5.3.0(32Bit) 
+> Qt : 4.7.2
+
+-------
 # Kullanım
 
 Parametrelerin tam olarak kayıt edilebilmesi için Ayarlar penceresini **kapatıp** çalıştırmanız gerekli. Sonraki güncellemede eklenecek. Ana ekrandaki **Log** bölümünden uygulamanın düzgün çalışıp çalışmadığını kontrol edebilirsiniz, herhangi bir problem yaşadığınızda bildirmekten çekinmeyin.

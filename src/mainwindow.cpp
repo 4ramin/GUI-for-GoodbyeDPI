@@ -87,7 +87,7 @@ MainWindow::MainWindow(QStringList arguments, QWidget *parent) :
     ui->comboParametre->addItem("russia_blacklist", QVariant("-1 --blacklist blacklist.txt"));
     ui->comboParametre->addItem("russia_blacklist_dnsredir", QVariant("-1 --dns-addr 1.1.1.1 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253 --blacklist blacklist.txt"));
     ui->comboParametre->addItem("all", QVariant("-1"));
-    ui->comboParametre->addItem(tr("all_dnsredir (Tavsiye Edilen)"), QVariant("-1 --dns-addr 1.1.1.1 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253"));
+    ui->comboParametre->addItem(tr("all_dnsredir (추천)"), QVariant("-1 --dns-addr 1.1.1.1 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253"));
     ui->comboParametre->addItem("all_dnsredir_hardcore", QVariant("-1 -a -m --dns-addr 1.1.1.1 --dns-port 1253 --dnsv6-addr 2a02:6b8::feed:0ff --dnsv6-port 1253"));
 
     ui->comboParametre->setCurrentIndex(3);

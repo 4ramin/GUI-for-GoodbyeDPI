@@ -20,14 +20,14 @@
       <item>
        <widget class="QPushButton" name="btnStart">
         <property name="text">
-         <string>Başlat</string>
+         <string>시작</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="btnStop">
         <property name="text">
-         <string>Durdur</string>
+         <string>중지</string>
         </property>
        </widget>
       </item>
@@ -36,7 +36,7 @@
     <item>
      <widget class="QGroupBox" name="groupBox_2">
       <property name="title">
-       <string>Parametre Listesi</string>
+       <string>Parameter List</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
@@ -95,7 +95,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>Ayarlar</string>
+    <string>설정</string>
    </property>
    <property name="visible">
     <bool>true</bool>
@@ -108,7 +108,7 @@
     </iconset>
    </property>
    <property name="text">
-    <string>Hakkında</string>
+    <string>정보</string>
    </property>
    <property name="toolTip">
     <string>Hakkında</string>
